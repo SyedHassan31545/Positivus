@@ -6,6 +6,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const boxes = document.querySelectorAll(".process-box");
+
+  boxes.forEach(box => {
+    const btn = box.querySelector(".toggle-btn");
+
+    btn.addEventListener("click", () => {
+      box.classList.toggle("active");
+      btn.textContent = box.classList.contains("active") ? "-" : "+";
+    });
+  });
+});
+</script>
 </head>
 <body>
 <nav class="navbar">
@@ -224,5 +238,251 @@
     <p class="OWP-top-para">Step-by-Step Guide to Achieving <br>Your Business Goals</p>
   </div>
 </section>
+
+<section class="process-section">
+
+  <div class="process-box">
+    <div class="process-header">
+      <div class="process-title">
+        <h2>01</h2>
+        <span>Consultation</span>
+      </div>
+      <button class="toggle-btn">+</button>
+    </div>
+
+    <div class="process-content">
+      <p>
+        During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
+      </p>
+    </div>
+  </div>
+
+  <div class="process-box">
+    <div class="process-header">
+      <div class="process-title">
+        <h2>02</h2>
+        <span>Research and Strategy Development</span>
+      </div>
+      <button class="toggle-btn">+</button>
+    </div>
+
+    <div class="process-content">
+      <p>
+        Research and strategy development is the foundation of any successful project. In this stage, market trends, competitors, and target audience behavior are carefully analyzed. Based on these insights, a clear and effective strategy is created to achieve business goals efficiently and reduce risks.
+      </p>
+    </div>
+  </div>
+
+  <div class="process-box">
+    <div class="process-header">
+      <div class="process-title">
+        <h2>03</h2>
+        <span>Implementation</span>
+      </div>
+      <button class="toggle-btn">+</button>
+    </div>
+
+    <div class="process-content">
+      <p>
+        Implementation is the stage where planned strategies are put into action. Tools, technologies, and resources are used to execute the plan accurately. Proper coordination and timely execution ensure that objectives are met according to the defined strategy.
+      </p>
+    </div>
+  </div>
+
+  <div class="process-box">
+    <div class="process-header">
+      <div class="process-title">
+        <h2>04</h2>
+        <span>Monitoring and Optimization</span>
+      </div>
+      <button class="toggle-btn">+</button>
+    </div>
+
+    <div class="process-content">
+      <p>
+        Monitoring and optimization involve tracking performance and measuring results regularly. Data and analytics are used to identify what is working and what needs improvement. Continuous optimization helps improve efficiency and maximize overall outcomes.
+      </p>
+    </div>
+  </div>
+
+  <div class="process-box">
+    <div class="process-header">
+      <div class="process-title">
+        <h2>05</h2>
+        <span>Reporting and Communication</span>
+      </div>
+      <button class="toggle-btn">+</button>
+    </div>
+
+    <div class="process-content">
+      <p>
+        Reporting and communication ensure transparency throughout the process. Clear reports are shared to highlight progress, performance, and results. Regular communication builds trust and keeps all stakeholders informed and aligned.
+      </p>
+    </div>
+  </div>
+
+  <div class="process-box">
+    <div class="process-header">
+      <div class="process-title">
+        <h2>06</h2>
+        <span>Continual Improvement</span>
+      </div>
+      <button class="toggle-btn">+</button>
+    </div>
+
+    <div class="process-content">
+      <p>
+        Continual improvement focuses on refining strategies over time. Feedback, performance data, and new opportunities are used to enhance processes and results. This approach helps businesses adapt to changes and maintain long-term growth.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<section class="Team">
+  <div class="Team-top">
+    <h2 class="Team-top-heading">Team</h2>
+    <p class="Team-top-para">Meet the skilled and experienced team behind our <br>successful digital marketing strategies</p>
+  </div>
+</section>
+
+<section class="team-section">
+  <div class="team-grid">
+
+    <div class="team-card">
+      <div class="card-top">
+        <div class="profile">
+          <img src="./imgs/team-card1.png" alt="Profile">
+          <div class="info">
+            <h4>John Smith</h4>
+            <span>CEO and Founder</span>
+          </div>
+        </div>
+
+        <div class="linkedin">in</div>
+      </div>
+
+      <div class="card-divider"></div>
+
+      <p class="card-text">
+        10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy
+      </p>
+    </div>
+
+    <div class="team-card">
+      <div class="card-top">
+        <div class="profile">
+          <img src="./imgs/team-card2.png" alt="Profile">
+          <div class="info">
+            <h4>Jane Doe</h4>
+            <span>Director of Operations</span>
+          </div>
+        </div>
+
+        <div class="linkedin">in</div>
+      </div>
+
+      <div class="card-divider"></div>
+
+      <p class="card-text">
+        7+ years of experience in project management and team leadership. Strong organizational and communication skills
+      </p>
+    </div>
+
+    <div class="team-card">
+      <div class="card-top">
+        <div class="profile">
+          <img src="./imgs/team-card3.png" alt="Profile">
+          <div class="info">
+            <h4>Michael Brown</h4>
+            <span>Senior SEO Specialist</span>
+          </div>
+        </div>
+
+        <div class="linkedin">in</div>
+      </div>
+
+      <div class="card-divider"></div>
+
+      <p class="card-text">
+        5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization
+      </p>
+    </div>
+
+    <div class="team-card">
+      <div class="card-top">
+        <div class="profile">
+          <img src="./imgs/team-card4.png" alt="Profile">
+          <div class="info">
+            <h4>Emily Johnson</h4>
+            <span>PPC Manager</span>
+          </div>
+        </div>
+
+        <div class="linkedin">in</div>
+      </div>
+
+      <div class="card-divider"></div>
+
+      <p class="card-text">
+        3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis
+      </p>
+    </div>
+
+    <div class="team-card">
+      <div class="card-top">
+        <div class="profile">
+          <img src="./imgs/team-card5.png" alt="Profile">
+          <div class="info">
+            <h4>Brian Williams</h4>
+            <span>Social Media <br>
+              Specialist</span>
+          </div>
+        </div>
+
+        <div class="linkedin">in</div>
+      </div>
+
+      <div class="card-divider"></div>
+
+      <p class="card-text">
+        4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement
+      </p>
+    </div>
+
+    <div class="team-card">
+      <div class="card-top">
+        <div class="profile">
+          <img src="./imgs/team-card6.png" alt="Profile">
+          <div class="info">
+            <h4>Sarah Kim</h4>
+            <span>Contant Creator</span>
+          </div>
+        </div>
+
+        <div class="linkedin">in</div>
+      </div>
+
+      <div class="card-divider"></div>
+
+      <p class="card-text">
+        2+ years of experience in writing and editing <br>
+        Skilled in creating compelling, SEO-optimized content for various industries
+      </p>
+    </div>
+
+  </div>
+  <div class="a-team-s">
+    <button class="team-btn">See all team</button>
+  </div>
+</section>
+
+<section class="Testimonials">
+  <div class="Tm-top">
+    <h2 class="Tm-top-heading">Testimonials</h2>
+    <p class="Tm-top-para">Hear from Our Satisfied Clients: Read Our Testimonials to Learn <br>More about Our Digital Marketing Services</p>
+  </div>
+</section>
+
 </body>
 </html>
