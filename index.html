@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -43,14 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
 <section class="hero">
   <div class="hero-left">
     <h1 class=" animate__animated animate__fadeInLeftBig">Navigating the digital landscape for success</h1>
-    <p>
+    <p class="animate__animated animate__fadeInLeftBig">
       Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
     </p>
-    <a href="#" class="hero-btn">Book a Consultation</a>
+    <a href="#" class="hero-btn animate__animated animate__fadeInLeftBig">Book a Consultation</a>
   </div>
 
   <div class="hero-right">
-    <img src="./imgs/Hero.png" alt="Hero Image">
+    <img src="./imgs/Hero.png" alt="Hero Image" class="animate__animated animate__fadeInRightBig">
   </div>
 </section>
 
@@ -477,12 +478,110 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 </section>
 
-<section class="Testimonials">
-  <div class="Tm-top">
-    <h2 class="Tm-top-heading">Testimonials</h2>
-    <p class="Tm-top-para">Hear from Our Satisfied Clients: Read Our Testimonials to Learn <br>More about Our Digital Marketing Services</p>
+<section class="Contact-us">
+  <div class="cu-top">
+    <h2 class="cu-top-heading">Contact Us</h2>
+    <p class="cu-top-para">Connect with Us: Let's Discuss Your <br>Digital Marketing Needs</p>
   </div>
 </section>
 
+<section class="contact-section">
+  <div class="contact-left">
+    <div class="radio-group">
+      <label class="radio-label">
+        <input type="radio" name="contact-type" value="say-hi" checked>
+        <span class="radio-custom"></span>
+        Say Hi
+      </label>
+      <label class="radio-label">
+        <input type="radio" name="contact-type" value="get-quote">
+        <span class="radio-custom"></span>
+        Get a Quote
+      </label>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="name">Name</label>
+      <input class="field-input" type="text" id="name" placeholder="Name">
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="email">Email</label>
+      <input class="field-input" type="email" id="email" placeholder="Email">
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="message">Message</label>
+      <textarea class="field-textarea" id="message" placeholder="Message"></textarea>
+    </div>
+
+    <button class="send-btn">Send Message</button>
+  </div>
+
+  <div class="contact-right">
+    <img src="./imgs/contact-img.png" alt="Contact" class="contact-image">
+  </div>
+</section>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<footer class="ft">
+  <nav class="ft-nav">
+    <div class="ft-logo">
+      <img src="./imgs/footer-icon.png" alt="Logo" class="ft-logo-img">
+      <span class="ft-logo-text">Positivus</span>
+    </div>
+
+    <ul class="ft-nav-links">
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Use Case</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+
+    <div class="ft-socials">
+      <a href="#" class="ft-social-btn" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in" style="color: #191a23;"></i>
+      </a>
+      <a href="#" class="ft-social-btn" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f" style="color: #191a23;"></i>
+      </a>
+      <a href="#" class="ft-social-btn" aria-label="Twitter">
+        <i class="fa-brands fa-twitter" style="color: #191a23;"></i>
+      </a>
+    </div>
+  </nav>
+
+  <div class="ft-center">
+    <div class="ft-contact">
+      <span class="ft-contact-title">Contact us:</span>
+      <p class="ft-contact-item">Email: info@gmail.com</p>
+      <p class="ft-contact-item">Phone: 555-567-8901</p>
+      <p class="ft-contact-item ft-address">
+        Address: 1234 Main St<br>Moonstone City, Stardust State 12345
+      </p>
+    </div>
+
+    <div class="ft-newsletter">
+      <div class="ft-newsletter-box">
+        <p class="ft-newsletter-label"></p>
+        <div class="ft-newsletter-row">
+          <input type="email" class="ft-newsletter-input" placeholder="Email">
+          <button class="ft-newsletter-btn">Subscribe to news</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ft-divider"></div>
+
+  <div class="ft-bottom">
+    <span class="ft-copy">© 2023 Positivus. All Rights Reserved.</span>
+    <a href="#" class="ft-privacy">Privacy Policy</a>
+  </div>
+
+</footer>
 </body>
 </html>
